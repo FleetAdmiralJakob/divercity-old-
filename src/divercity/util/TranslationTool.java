@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.util;
+package divercity.util;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -27,7 +27,7 @@ public class TranslationTool extends JFrame
 
 	public TranslationTool()
 	{
-		setTitle("MicropolisJ Translation Tool");
+		setTitle("DiverCity Translation Tool");
 
 		try {
 		stringsModel = new StringsModel();
@@ -99,7 +99,7 @@ public class TranslationTool extends JFrame
 	{
 		try{
 
-		Class mclass = micropolisj.engine.Micropolis.class;
+		Class mclass = divercity.engine.DiverCity.class;
 		return new File(
 			mclass.getProtectionDomain()
 				.getCodeSource().getLocation().toURI().getPath()
@@ -145,7 +145,7 @@ public class TranslationTool extends JFrame
 				"-Duser.variant="+selVariant,
 				"-cp",
 				classPath,
-				"micropolisj.Main"
+				"divercity.Main"
 				);
 			processBuilder.start();
 		}
@@ -300,7 +300,7 @@ public class TranslationTool extends JFrame
 
 		String msg = "";
 		msg = msg + "Your translated strings have been saved to\n";
-		msg = msg + new File(stringsModel.workingDirectory, "micropolisj").toString() + "\n";
+		msg = msg + new File(stringsModel.workingDirectory, "divercity").toString() + "\n";
 		msg = msg + "as:\n";
 		for (int i = 0; i < stringsModel.FILES.length; i++) {
 			msg = msg + " * "
@@ -308,8 +308,8 @@ public class TranslationTool extends JFrame
 				+ "\n";
 		}
 		msg = msg + "\n";
-		msg = msg + "Submit these files to the Micropolis website\n";
-		msg = msg + "https://code.google.com/p/micropolis\n";
+		msg = msg + "Submit these files to the DiverCity website\n";
+		msg = msg + "https://github.com/The-Cool-German-Coder/divercity\n";
 		msg = msg + "(Open a new \"Issue\" and attach the files to the issue.)";
 
 		JOptionPane.showMessageDialog(this,

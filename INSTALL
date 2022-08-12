@@ -1,7 +1,7 @@
 Prerequisites
 =============
 
-To build MicropolisJ you will need
+To build DiverCity you will need
  * Java Development Kit (version 7), get it from http://oracle.com/technetwork/java
  * Apache Ant, get it from http://ant.apache.org
 
@@ -14,15 +14,15 @@ Building the Package
   2. Type `ant' to compile the package.
 
 
-Installing MicropolisJ
+Installing DiverCity
 ======================
 
 Everything you need to run the program is contained within the micropolisj.jar
 file, so just copy that file to wherever you like.
 
 
-Running MicropolisJ
+Running DiverCity
 ===================
 
-Type `java -jar micropolisj.jar` to run the program.
+Type `java -jar divercity.jar` to run the program.
 
