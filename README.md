@@ -62,6 +62,8 @@ new Features
 AUTHORS
 -----------------
 
+Copyright (C) for Divercity: 2022 Jakob Rössner, Augustin Rössner
+
 Copyright (C) for Divercity: 2014 Arne Roland, Benjamin Kretz, Estela Gretenkord i Berenguer, Fabian Mett, Marvin Becker, Tom Brewe, Tony Schwedek, Ullika Scholz, Vanessa Schreck.
 
 Copyright (C) for MicropolisJ: 2013 Jason Long (jason@long.name).
