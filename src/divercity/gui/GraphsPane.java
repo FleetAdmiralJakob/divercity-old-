@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.gui;
+package divercity.gui;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -15,13 +15,13 @@ import java.awt.geom.Path2D;
 import java.util.*;
 import javax.swing.*;
 
-import micropolisj.engine.*;
-import static micropolisj.gui.ColorParser.parseColor;
+import divercity.engine.*;
+import static divercity.gui.ColorParser.parseColor;
 
 public class GraphsPane extends JPanel
-	implements Micropolis.Listener
+	implements DiverCity.Listener
 {
-	Micropolis engine;
+	DiverCity engine;
 
 	JToggleButton tenYearsBtn;
 	JToggleButton onetwentyYearsBtn;
@@ -53,7 +53,7 @@ public class GraphsPane extends JPanel
 	static final int BOTTOM_MARGIN = 2;
 	static final int LEGEND_PADDING = 6;
 
-	public GraphsPane(Micropolis engine)
+	public GraphsPane(DiverCity engine)
 	{
 		super(new BorderLayout());
 
@@ -131,7 +131,7 @@ public class GraphsPane extends JPanel
 		dataBtns.get(GraphData.POLLUTION).setSelected(true);
 	}
 
-	public void setEngine(Micropolis newEngine)
+	public void setEngine(DiverCity newEngine)
 	{
 		if (engine != null) {  //old engine
 			engine.removeListener(this);
@@ -148,15 +148,15 @@ public class GraphsPane extends JPanel
 		setVisible(false);
 	}
 
-	//implements Micropolis.Listener
-	public void cityMessage(MicropolisMessage message, CityLocation loc) {}
+	//implements DiverCity.Listener
+	public void cityMessage(DiverCityMessage message, CityLocation loc) {}
 	public void citySound(Sound sound, CityLocation loc) {}
 	public void demandChanged() {}
 	public void evaluationChanged() {}
 	public void fundsChanged() {}
 	public void optionsChanged() {}
 
-	//implements Micropolis.Listener
+	//implements DiverCity.Listener
 	public void censusChanged()
 	{
 		graphArea.repaint();
@@ -262,7 +262,7 @@ public class GraphsPane extends JPanel
 
 			// draw vertical bars and label the dates
 			boolean isOneTwenty = onetwentyYearsBtn.isSelected();
-			int unitPeriod = isOneTwenty ? 12*Micropolis.CENSUSRATE : Micropolis.CENSUSRATE;
+			int unitPeriod = isOneTwenty ? 12*DiverCity.CENSUSRATE : DiverCity.CENSUSRATE;
 			int hashPeriod = isOneTwenty ? 10*unitPeriod : 12*unitPeriod;
 			int startTime = ((engine.history.cityTime / unitPeriod) - 119) * unitPeriod;
 
@@ -271,7 +271,7 @@ public class GraphsPane extends JPanel
 				int t = startTime + i * unitPeriod;  // t might be negative
 				if (t % hashPeriod == 0) {
 					// year
-					int year = 1900+(t/(12*Micropolis.CENSUSRATE));
+					int year = 1900+(t/(12*DiverCity.CENSUSRATE));
 					int numHashes = t/hashPeriod;
 					int x = (int)Math.round(leftEdge+i*x_interval);
 					int y = getInsets().top + TOP_MARGIN +

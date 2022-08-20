@@ -7,9 +7,9 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 /**
  * Implements the cargo ship.
@@ -35,7 +35,7 @@ public class ShipSprite extends Sprite
 	public static final int SOUTH_EDGE = 1;
 	public static final int WEST_EDGE = 3;
 
-	public ShipSprite(Micropolis engine, int xpos, int ypos, int edge)
+	public ShipSprite(DiverCity engine, int xpos, int ypos, int edge)
 	{
 		super(engine, SpriteKind.SHI);
 		this.x = xpos * 16 + 8;

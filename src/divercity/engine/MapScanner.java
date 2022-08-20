@@ -8,9 +8,9 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 /**
  * Process individual tiles of the map for each cycle.
@@ -22,7 +22,7 @@ class MapScanner extends TileBehavior
 	final B behavior;
 	TrafficSim traffic;
 
-	MapScanner(Micropolis city, B behavior)
+	MapScanner(DiverCity city, B behavior)
 	{
 		super(city);
 		this.behavior = behavior;
@@ -231,7 +231,7 @@ class MapScanner extends TileBehavior
 	void doNuclearPower()
 	{
 		checkZonePower();
-		if (!city.noDisasters && PRNG.nextInt(Micropolis.MltdwnTab[city.gameLevel] + (int) (3000.0 * Math.sqrt(city.meltdownsccount)) + 1) == 0) {
+		if (!city.noDisasters && PRNG.nextInt(DiverCity.MltdwnTab[city.gameLevel] + (int) (3000.0 * Math.sqrt(city.meltdownsccount)) + 1) == 0) {
 			city.doMeltdown(xpos, ypos);
 			return;
 		}

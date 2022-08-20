@@ -8,7 +8,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 import java.util.*;
 
@@ -17,10 +17,10 @@ import java.util.*;
  */
 public class CityEval
 {
-	private final Micropolis engine;
+	private final DiverCity engine;
 	private final Random PRNG;
 
-	public CityEval(Micropolis engine)
+	public CityEval(DiverCity engine)
 	{
 		this.engine = engine;
 		this.PRNG = engine.PRNG;

@@ -7,13 +7,13 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 class RoadLikeTool extends ToolStroke
 {
-	RoadLikeTool(Micropolis city, MicropolisTool tool, int xpos, int ypos)
+	RoadLikeTool(DiverCity city, DiverCityTool tool, int xpos, int ypos)
 	{
 		super(city, tool, xpos, ypos);
 	}

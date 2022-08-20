@@ -1,6 +1,6 @@
-package micropolisj.build_tool;
+package divercity.build_tool;
 
-import micropolisj.engine.TileSpec;
+import divercity.engine.TileSpec;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;

@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 /**
  * Specifies a rectangular area in the city's coordinate space.

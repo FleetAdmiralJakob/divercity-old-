@@ -7,10 +7,10 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 import java.util.*;
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 public class ToolPreview implements ToolEffectIfc
 {
@@ -18,7 +18,7 @@ public class ToolPreview implements ToolEffectIfc
 	public int offsetY;
 	public short [][] tiles;
 	public int cost;
-    public MicropolisTool tool;
+    public DiverCityTool tool;
     public ToolResult toolResult;
 	public List<SoundInfo> sounds;
 
@@ -41,7 +41,7 @@ public class ToolPreview implements ToolEffectIfc
 		this.tiles = new short[0][0];
 		this.sounds = new ArrayList<SoundInfo>();
 		this.toolResult = ToolResult.NONE;
-        this.tool = MicropolisTool.PARK;
+        this.tool = DiverCityTool.PARK;
     }
 
 	//implements ToolEffectIfc
@@ -161,11 +161,11 @@ public class ToolPreview implements ToolEffectIfc
 		cost += amount;
 	}
 
-    public void setTool(MicropolisTool tool) {
+    public void setTool(DiverCityTool tool) {
         this.tool = tool;
     }
 
-    public MicropolisTool getTool() {
+    public DiverCityTool getTool() {
         return tool;
     }
 

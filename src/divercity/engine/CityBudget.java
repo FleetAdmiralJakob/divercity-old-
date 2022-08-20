@@ -7,11 +7,11 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 public class CityBudget
 {
-	private final Micropolis city;
+	private final DiverCity city;
 
 	/**
 	 * The amount of cash on hand.
@@ -42,7 +42,7 @@ public class CityBudget
 	int schoolFundEscrow;
 
 	int cultureFundEscrow;
-	CityBudget(Micropolis city)
+	CityBudget(Divercity city)
 	{
 		this.city = city;
 	}

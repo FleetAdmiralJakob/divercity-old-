@@ -6,10 +6,10 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine.techno;
-import micropolisj.engine.*;
-import micropolisj.gui.MessagesPane;
-import micropolisj.gui.NotificationPane;
+package divercity.engine.techno;
+import divercity.engine.*;
+import divercity.gui.MessagesPane;
+import divercity.gui.NotificationPane;
 
 
 public class GeneralTechnology implements Technology {
@@ -17,13 +17,13 @@ public class GeneralTechnology implements Technology {
     double pointsUsed;
     String name;
     String description;
-    MicropolisTool buildingNumber;
+    DiverCityTool buildingNumber;
     public boolean isResearched;
-    MicropolisMessage message;
-    Micropolis engine;
+    DiverCityMessage message;
+    DiverCity engine;
    
 
-    public GeneralTechnology(Micropolis engine_, double pointsNeeded_, String description_, String name_, MicropolisMessage m){
+    public GeneralTechnology(DiverCity engine_, double pointsNeeded_, String description_, String name_, DiverCityMessage m){
         pointsNeeded = pointsNeeded_;
         name = name_;
         description = description_;
@@ -79,7 +79,7 @@ public class GeneralTechnology implements Technology {
         return description;
     }
 
-    public MicropolisTool getTool(){
+    public DiverCityTool getTool(){
         return buildingNumber;
     }
 

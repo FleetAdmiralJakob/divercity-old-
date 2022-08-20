@@ -8,24 +8,24 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import static micropolisj.engine.TileConstants.*;
-import micropolisj.engine.techno.BuildingTechnology;
-import micropolisj.engine.techno.Technology;
+import static divercity.engine.TileConstants.*;
+import divercity.engine.techno.BuildingTechnology;
+import divercity.engine.techno.Technology;
 
 
 public class ToolStroke
 {
-	final Micropolis city;
-	final MicropolisTool tool;
+	final DiverCity city;
+	final DiverCityTool tool;
 	int xpos;
 	int ypos;
 	int xdest;
 	int ydest;
 	boolean inPreview;
 
-	ToolStroke(Micropolis city, MicropolisTool tool, int xpos, int ypos)
+	ToolStroke(DiverCity city, DiverCityTool tool, int xpos, int ypos)
 	{
 		this.city = city;
 		this.tool = tool;

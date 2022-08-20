@@ -1,4 +1,4 @@
-package micropolisj.build_tool;
+package divercity.build_tool;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 
 /**
  * Just a little utility I wrote to rearrange 16x16 tiles into a grid
- * of a different width. Not included in the Micropolis build.
+ * of a different width. Not included in the DiverCity build.
  */
 public class RearrangeTiles
 {

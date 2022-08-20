@@ -7,10 +7,10 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 /**
- * Implements a tornado (one of the Micropolis disasters).
+ * Implements a tornado (one of the DiverCity disasters).
  */
 public class TornadoSprite extends Sprite
 {
@@ -20,7 +20,7 @@ public class TornadoSprite extends Sprite
 	boolean flag;
 	int count;
 
-	public TornadoSprite(Micropolis engine, int xpos, int ypos)
+	public TornadoSprite(DiverCity engine, int xpos, int ypos)
 	{
 		super(engine, SpriteKind.TOR);
 		this.x = xpos * 16 + 8;

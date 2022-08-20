@@ -7,20 +7,20 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 /**
  * Represents a mobile entity on the city map, such as a tornado
  * or a train. There can be any number present in a city, and each one
  * gets a chance to act on every tick of the simulation.
  *
- * @see Micropolis#moveObjects
+ * @see DiverCity#moveObjects
  */
 public abstract class Sprite
 {
-	Micropolis city;
+	DiverCity city;
 
 	//TODO- enforce read-only nature of the following properties
 	// (i.e. do not let them be modified directly by other classes)
@@ -41,7 +41,7 @@ public abstract class Sprite
 
 	int dir;
 
-	protected Sprite(Micropolis engine, SpriteKind kind)
+	protected Sprite(DiverCity engine, SpriteKind kind)
 	{
 		this.city = engine;
 		this.kind = kind;
@@ -138,20 +138,20 @@ public abstract class Sprite
 		switch (kind) {
 		case AIR:
 			city.crashLocation = new CityLocation(xpos, ypos);
-			city.sendMessageAt(MicropolisMessage.PLANECRASH_REPORT, xpos, ypos);
+			city.sendMessageAt(DiverCityMessage.PLANECRASH_REPORT, xpos, ypos);
 			break;
 		case SHI:
 			city.crashLocation = new CityLocation(xpos, ypos);
-			city.sendMessageAt(MicropolisMessage.SHIPWRECK_REPORT, xpos, ypos);
+			city.sendMessageAt(DiverCityMessage.SHIPWRECK_REPORT, xpos, ypos);
 			break;
 		case TRA:
 		case BUS:
 			city.crashLocation = new CityLocation(xpos, ypos);
-			city.sendMessageAt(MicropolisMessage.TRAIN_CRASH_REPORT, xpos, ypos);
+			city.sendMessageAt(DiverCityMessage.TRAIN_CRASH_REPORT, xpos, ypos);
 			break;
 		case COP:
 			city.crashLocation = new CityLocation(xpos, ypos);
-			city.sendMessageAt(MicropolisMessage.COPTER_CRASH_REPORT, xpos, ypos);
+			city.sendMessageAt(DiverCityMessage.COPTER_CRASH_REPORT, xpos, ypos);
 			break;
 		}
 

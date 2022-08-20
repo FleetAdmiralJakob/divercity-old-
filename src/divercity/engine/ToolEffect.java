@@ -8,25 +8,25 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import micropolisj.engine.techno.BuildingTechnology;
+import divercity.engine.techno.BuildingTechnology;
 
-import static micropolisj.engine.TileConstants.CLEAR;
+import static divercity.engine.TileConstants.CLEAR;
 
 class ToolEffect implements ToolEffectIfc
 {
-	final Micropolis city;
+	final DiverCity city;
 	final ToolPreview preview;
 	final int originX;
 	final int originY;
 
-	ToolEffect(Micropolis city)
+	ToolEffect(DiverCity city)
 	{
 		this(city, 0, 0);
 	}
 
-	ToolEffect(Micropolis city, int xpos, int ypos)
+	ToolEffect(DiverCity city, int xpos, int ypos)
 	{
 		this.city = city;
 		this.preview = new ToolPreview();
@@ -70,11 +70,11 @@ class ToolEffect implements ToolEffectIfc
 		preview.spend(amount);
 	}
 
-    public void setTool(MicropolisTool tool) {
+    public void setTool(DiverCityTool tool) {
         preview.setTool(tool);
     }
 
-    public MicropolisTool getTool() {
+    public DiverCityTool getTool() {
         return preview.getTool();
     }
 
@@ -111,7 +111,7 @@ class ToolEffect implements ToolEffectIfc
             return ToolResult.INSUFFICIENT_POPULATION;
         }
 
-        if (preview.getTool() == MicropolisTool.CITYHALL) {
+        if (preview.getTool() == DiverCityTool.CITYHALL) {
 
             if (city.cityhallCountMem >= city.evaluation.cityClass)
                 return ToolResult.INSUFFICIENT_POPULATION;
@@ -124,7 +124,7 @@ class ToolEffect implements ToolEffectIfc
             city.cityhallCountMem++;
         }
 
-        if ((preview.getTool() == MicropolisTool.UNIA || preview.getTool() == MicropolisTool.UNIB) && city.lastSchoolCount < 1)
+        if ((preview.getTool() == DiverCityTool.UNIA || preview.getTool() == DiverCityTool.UNIB) && city.lastSchoolCount < 1)
             return ToolResult.NEED_A_SCHOOL;
 
 

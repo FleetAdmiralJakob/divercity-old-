@@ -7,21 +7,21 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 import java.util.Random;
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 public abstract class TileBehavior
 {
-	protected final Micropolis city;
+	protected final DiverCity city;
 	protected final Random PRNG;
 	int xpos;
 	int ypos;
 	int tile;
 	int rawTile;
 
-	protected TileBehavior(Micropolis city)
+	protected TileBehavior(DiverCity city)
 	{
 		this.city = city;
 		this.PRNG = city.PRNG;

@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.gui;
+package divercity.gui;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -16,13 +16,13 @@ import javax.swing.event.*;
 import java.text.NumberFormat;
 import java.util.*;
 
-import micropolisj.engine.*;
-import static micropolisj.gui.MainWindow.formatFunds;
-import static micropolisj.gui.MainWindow.formatGameDate;
+import divercity.engine.*;
+import static divercity.gui.MainWindow.formatFunds;
+import static divercity.gui.MainWindow.formatGameDate;
 
 public class BudgetDialog extends JDialog
 {
-	Micropolis engine;
+	DiverCity engine;
 
 	JSpinner taxRateEntry;
 	int origTaxRate;
@@ -118,7 +118,7 @@ public class BudgetDialog extends JDialog
 			);
 	}
 
-	public BudgetDialog(Window owner, Micropolis engine)
+	public BudgetDialog(Window owner, DiverCity engine)
 	{
 		super(owner);
 		setTitle(strings.getString("budgetdlg.title"));
@@ -413,8 +413,8 @@ public class BudgetDialog extends JDialog
 				break;
 			}
 
-			Micropolis.FinancialHistory f = engine.financialHistory.get(i);
-			Micropolis.FinancialHistory fPrior = engine.financialHistory.get(i+1);
+			DiverCity.FinancialHistory f = engine.financialHistory.get(i);
+			DiverCity.FinancialHistory fPrior = engine.financialHistory.get(i+1);
 			int cashFlow = f.totalFunds - fPrior.totalFunds;
 			int capExpenses = -(cashFlow - f.taxIncome + f.operatingExpenses);
 

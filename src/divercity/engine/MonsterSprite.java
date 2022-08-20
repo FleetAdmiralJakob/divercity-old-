@@ -7,12 +7,12 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 /**
- * Implements a monster (one of the Micropolis disasters).
+ * Implements a monster (one of the DiverCity disasters).
  */
 public class MonsterSprite extends Sprite
 {
@@ -44,7 +44,7 @@ public class MonsterSprite extends Sprite
 	static int [] nn1 = {  2, 5, 8, 11 };
 	static int [] nn2 = { 11, 2, 5,  8 };
 
-	public MonsterSprite(Micropolis engine, int xpos, int ypos)
+	public MonsterSprite(DiverCity engine, int xpos, int ypos)
 	{
 		super(engine, SpriteKind.GOD);
 		this.x = xpos * 16 + 8;

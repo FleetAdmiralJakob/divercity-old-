@@ -1,4 +1,4 @@
-package micropolisj.engine;
+package divercity.engine;
 
 public class SpecifiedTile {
 	private CityLocation loc;

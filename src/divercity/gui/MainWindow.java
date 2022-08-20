@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.gui;
+package divercity.gui;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -26,14 +26,14 @@ import javax.swing.Timer;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.plaf.metal.MetalIconFactory;
 
-import micropolisj.engine.*;
-import micropolisj.engine.techno.GeneralTechnology;
-import micropolisj.util.TranslationTool;
+import divercity.engine.*;
+import divercity.engine.techno.GeneralTechnology;
+import divercity.util.TranslationTool;
 
 public class MainWindow extends JFrame
-        implements Micropolis.Listener, EarthquakeListener {
-    Micropolis engine;
-    MicropolisDrawingArea drawingArea;
+        implements DiverCity.Listener, EarthquakeListener {
+    DiverCity engine;
+    DiverCityDrawingArea drawingArea;
     JScrollPane drawingAreaScroll;
     DemandIndicator demandInd;
     MessagesPane messagesPane;
@@ -49,9 +49,9 @@ public class MainWindow extends JFrame
     JLabel popLbl;
     JLabel currentToolLbl;
     JLabel currentToolCostLbl;
-    Map<MicropolisTool, JToggleButton> toolBtns;
+    Map<DiverCityTool, JToggleButton> toolBtns;
     EnumMap<MapState, JMenuItem> mapStateMenuItems = new EnumMap<MapState, JMenuItem>(MapState.class);
-    MicropolisTool currentTool;
+    DiverCityTool currentTool;
     File currentFile;
     boolean doSounds = true;
     boolean dirty1 = false;  //indicates if a tool was successfully applied since last save
@@ -66,7 +66,7 @@ public class MainWindow extends JFrame
         appIcon = new ImageIcon(MainWindow.class.getResource("/micropolism.png"));
     }
 
-    static ResourceBundle strings = ResourceBundle.getBundle("micropolisj.GuiStrings");
+    static ResourceBundle strings = ResourceBundle.getBundle("micropolisj.GuiStrings"); 
     static final String PRODUCT_NAME = strings.getString("PRODUCT");
 
     public MainWindow() {

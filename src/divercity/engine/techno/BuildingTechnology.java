@@ -1,10 +1,10 @@
-package micropolisj.engine.techno;
-import micropolisj.engine.*;
+package divercity.engine.techno;
+import divercity.engine.*;
 
 public class BuildingTechnology extends GeneralTechnology {
-    MicropolisTool tool_;
+    DiverCityTool tool_;
 
-     public BuildingTechnology(Micropolis engine_, double pointsNeeded_, String description_, String name_, MicropolisTool tool_, MicropolisMessage m){
+     public BuildingTechnology(DiverCity engine_, double pointsNeeded_, String description_, String name_, DiverCityTool tool_, DiverCityMessage m){
         super(engine_, pointsNeeded_, description_, name_,m);
         this.tool_ = tool_;
     }
@@ -24,7 +24,7 @@ public class BuildingTechnology extends GeneralTechnology {
     }
 
 
-    public MicropolisTool getTool(){
+    public DiverCityTool getTool(){
         return tool_;
     }
 

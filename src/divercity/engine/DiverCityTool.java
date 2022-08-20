@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 import micropolisj.engine.techno.BuildingTechnology;
 
@@ -17,7 +17,7 @@ import static micropolisj.engine.TileConstants.*;
  * Enumerates the various tools that can be applied to the map by the user.
  * Call the tool's apply() method to actually use the tool on the map.
  */
-public enum MicropolisTool
+public enum DiverCityTool
 {
     BULLDOZER(1, 1, 0),
     WIRE(1, 5, 0),   //cost=25 for underwater

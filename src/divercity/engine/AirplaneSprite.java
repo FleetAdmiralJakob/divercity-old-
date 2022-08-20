@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 /**
  * Implements the airplane.
@@ -25,7 +25,7 @@ public class AirplaneSprite extends Sprite
 	static int [] CDx = { 0,  0,  6,  8,  6,  0, -6, -8, -6,  8,  8,  8 };
 	static int [] CDy = { 0, -8, -6,  0,  6,  8,  6,  0, -6,  0,  0,  0 };
 
-	public AirplaneSprite(Micropolis engine, int xpos, int ypos)
+	public AirplaneSprite(DiverCity engine, int xpos, int ypos)
 	{
 		super(engine, SpriteKind.AIR);
 		this.x = xpos * 16 + 8;

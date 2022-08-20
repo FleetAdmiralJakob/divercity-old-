@@ -7,25 +7,25 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.gui;
+package divercity.gui;
 
 import java.awt.*;
 import java.awt.image.*;
 import java.net.URL;
 import javax.swing.*;
 
-import micropolisj.engine.*;
+import divercity.engine.*;
 
 public class DemandIndicator extends JComponent
-	implements Micropolis.Listener
+	implements DiverCity.Listener
 {
-	Micropolis engine;
+	DiverCity engine;
 
 	public DemandIndicator()
 	{
 	}
 
-	public void setEngine(Micropolis newEngine)
+	public void setEngine(DiverCity newEngine)
 	{
 		if (engine != null) { //old engine
 			engine.removeListener(this);
@@ -42,7 +42,7 @@ public class DemandIndicator extends JComponent
 	static final BufferedImage backgroundImage = loadImage("/demandg.png");
 	static BufferedImage loadImage(String resourceName)
 	{
-		URL iconUrl = MicropolisDrawingArea.class.getResource(resourceName);
+		URL iconUrl = DiverCityDrawingArea.class.getResource(resourceName);
 		Image refImage = new ImageIcon(iconUrl).getImage();
 
 		BufferedImage bi = new BufferedImage(refImage.getWidth(null), refImage.getHeight(null),
@@ -135,14 +135,14 @@ public class DemandIndicator extends JComponent
 		}
 	}
 
-	//implements Micropolis.Listener
+	//implements DiverCity.Listener
 	public void demandChanged()
 	{
 		repaint();
 	}
 
-	//implements Micropolis.Listener
-	public void cityMessage(MicropolisMessage m, CityLocation p) { }
+	//implements DiverCity.Listener
+	public void cityMessage(DiverCityMessage m, CityLocation p) { }
 	public void citySound(Sound sound, CityLocation p) { }
 	public void censusChanged() { }
 	public void evaluationChanged() { }

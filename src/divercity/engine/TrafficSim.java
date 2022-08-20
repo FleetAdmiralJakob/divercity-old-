@@ -6,7 +6,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -20,7 +20,7 @@ import java.util.LinkedList;
  * Simulates traffic stuff
  */
 public class TrafficSim {
-	Micropolis engine;
+	DiverCity engine;
 	HashMap<Integer,SpecifiedTile> unready;
 	HashMap<RoadSpecifiedTile,SpecifiedTile> ready;
 	HashMap<RoadSpecifiedTile,Integer> mapBack;
@@ -32,10 +32,10 @@ public class TrafficSim {
 	
 	
 	public TrafficSim(){
-		this(new Micropolis());
+		this(new DiverCity());
 	}
 	
-	public TrafficSim(Micropolis city){
+	public TrafficSim(DiverCity city){
 		engine = city;
 		ready = new HashMap<RoadSpecifiedTile,SpecifiedTile>();
 		unready = new HashMap<Integer,SpecifiedTile>();
@@ -379,8 +379,8 @@ public class TrafficSim {
 		HashSet<RoadSpecifiedTile> ret=new HashSet<RoadSpecifiedTile>();
 		
 		for (int dir=0;dir<4;dir++) {
-			if (engine.onMap(loc,dir) && TileConstants.isRoadAny(engine.getTile(Micropolis.goToAdj(loc,dir).x, Micropolis.goToAdj(loc,dir).y))) {
-				CityLocation destination=Micropolis.goToAdj(loc,dir);
+			if (engine.onMap(loc,dir) && TileConstants.isRoadAny(engine.getTile(DiverCity.goToAdj(loc,dir).x, DiverCity.goToAdj(loc,dir).y))) {
+				CityLocation destination=DiverCity.goToAdj(loc,dir);
 				for (int u : calcRoadType(destination,engine.getTile(loc))) {
 					ret.add(new RoadSpecifiedTile(destination,u));
 				}
@@ -393,8 +393,8 @@ public class TrafficSim {
 		HashSet<RoadSpecifiedTile> ret=new HashSet<RoadSpecifiedTile>();
 		
 		for (int dir=0;dir<4;dir++) {
-			if (engine.onMap(loc,dir) && TileConstants.isRoadAny(engine.getTile(Micropolis.goToAdj(loc,dir).x, Micropolis.goToAdj(loc,dir).y))) {
-				CityLocation destination=Micropolis.goToAdj(loc,dir);
+			if (engine.onMap(loc,dir) && TileConstants.isRoadAny(engine.getTile(DiverCity.goToAdj(loc,dir).x, DiverCity.goToAdj(loc,dir).y))) {
+				CityLocation destination=DiverCity.goToAdj(loc,dir);
 				for (int u : calcRoadType(destination,roadTyp)) {
 					ret.add(new RoadSpecifiedTile(destination,u));
 				}

@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 /**
  * Implements the helicopter.
@@ -27,7 +27,7 @@ public class HelicopterSprite extends Sprite
 	static int [] CDy = { 0, -5, -3,  0,  3,  5,  3,  0, -3 };
 	static final int SOUND_FREQ = 200;
 
-	public HelicopterSprite(Micropolis engine, int xpos, int ypos)
+	public HelicopterSprite(DiverCity engine, int xpos, int ypos)
 	{
 		super(engine, SpriteKind.COP);
 		this.x = xpos * 16 + 8;
@@ -90,7 +90,7 @@ public class HelicopterSprite extends Sprite
 			if (city.getTrafficDensity(xpos, ypos) > 170 &&
 				city.PRNG.nextInt(8) == 0)
 			{
-				city.sendMessageAt(MicropolisMessage.HEAVY_TRAFFIC_REPORT,
+				city.sendMessageAt(DiverCityMessage.HEAVY_TRAFFIC_REPORT,
 					xpos, ypos);
 				city.makeSound(xpos, ypos, Sound.HEAVYTRAFFIC);
 			}

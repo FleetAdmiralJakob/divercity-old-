@@ -6,10 +6,10 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 public class QuietExplosionSprite extends ExplosionSprite {
-    QuietExplosionSprite(Micropolis engine, int x, int y) {
+    QuietExplosionSprite(DiverCity engine, int x, int y) {
         super(engine, x, y);
     }
 
@@ -17,7 +17,7 @@ public class QuietExplosionSprite extends ExplosionSprite {
         if (city.acycle % 2 == 0) {
             if (this.frame == 1) {
                 //       city.makeSound(x/16, y/16, Sound.EXPLOSION_HIGH);
-                city.sendMessageAt(MicropolisMessage.EXPLOSION_REPORT, x / 16, y / 16);
+                city.sendMessageAt(DiverCityMessage.EXPLOSION_REPORT, x / 16, y / 16);
             }
             this.frame++;
         }

@@ -15,14 +15,295 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="461bf68b-519d-4fa7-827b-2a1a8df4bd93" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/build/HACKING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/airport.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bigpark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bigpark_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bigroads.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bigroads_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/cityhall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/coal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/coal_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/com.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/com_zones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/com_zones_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/demandg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/CityMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/CityMessages_de.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/CityMessages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/CityMessages_sv.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/CityStrings.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/CityStrings_de.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/CityStrings_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/CityStrings_sv.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/GuiStrings.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/GuiStrings_de.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/GuiStrings_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/GuiStrings_sv.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/StatusMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/StatusMessages_de.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/StatusMessages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/divercity/StatusMessages_sv.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/fire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/firestation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/firestation_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/granahi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grcom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grcomhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grcrim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grcrimhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grcul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grculhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grind.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grindhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grmony.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grmonyhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grpoll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grpollhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grres.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/grreshi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icairp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icairphi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icbigpark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icbigparkhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icbigroad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icbigroadhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icchhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/iccoal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/iccoalhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/iccom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/iccomhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icdozr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icdozrhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icfire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icfirehi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icind.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icindhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icmus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icmushi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icnuc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icnuchi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icopenair.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icopenairhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icpark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icparkhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icpol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icpolhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icqry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icqryhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icrail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icrailhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icres.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icreshi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icroad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icroadhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icsch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icschhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icseap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icseaphi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icsol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icsolhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icstad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icstadhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icstation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icstationhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icunia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icuniahi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icunib.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icunibhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icwin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icwinhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icwire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/icwirehi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ind.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ind_zones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ind_zones_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/legendmm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/legendpm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/micropolism.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/misc_animation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/misc_animation_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/museum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/museum_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/narrowings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/nuclear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/nuclear_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj1-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj1-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj1-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj1-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj2-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj2-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj2-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj2-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj2-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj2-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj2-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj2-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj3-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj4-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj4-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj4-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj4-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj4-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj4-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj4-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj4-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj5-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj6-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj6-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj6-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj7-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj7-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj7-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj7-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj7-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj7-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj8-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj8-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj8-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/obj8-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/openair.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/police.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/police_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/rails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/rails_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/res.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/res_houses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/res_houses_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/res_zones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/res_zones_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/roads.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/roads_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/roadwire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/roadwire_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/school.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/school_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/seaport.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/seaport_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/bop.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/explosion-high.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/explosion-low.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/heavytraffic.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/honkhonk-hi.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/honkhonk-high.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/honkhonk-low.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/honkhonk-med.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/layzone.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/monster.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/siren.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/sorry.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/uhuh.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/sounds/zombie-roar-5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/stadium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/stadium2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/stadium2_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/stadium_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/station.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/terrain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/terrain_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/traffic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/traffic_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/unia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/unia_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/unib.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HACKING" beforeDir="false" afterPath="$PROJECT_DIR$/HACKING" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSTALL" beforeDir="false" afterPath="$PROJECT_DIR$/INSTALL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/divercity/engine/Micropolis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/DiverCity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/divercity/util/TranslationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/util/TranslationTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strings/GuiStrings_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/strings/GuiStrings_de.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strings/GuiStrings_sv.properties" beforeDir="false" afterPath="$PROJECT_DIR$/strings/GuiStrings_sv.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micropolisj.icns" beforeDir="false" afterPath="$PROJECT_DIR$/divercity.icns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micropolisj.ico" beforeDir="false" afterPath="$PROJECT_DIR$/divercity.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/build_tool/MakeTiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/build_tool/MakeTiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/build_tool/RearrangeTiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/build_tool/RearrangeTiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/AirplaneSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/AirplaneSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/BudgetNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/BudgetNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/Bulldozer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/Bulldozer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/CityBudget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/CityBudget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/CityDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/CityDimension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/CityEval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/CityEval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/CityLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/CityLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/CityProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/CityProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/CityRect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/CityRect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/Disaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/Disaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/DiverCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/DiverCity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/EarthquakeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/EarthquakeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/ExplosionSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/ExplosionSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/GameLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/HelicopterSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/HelicopterSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/MapGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/MapGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/MapListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/MapListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/MapScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/MapScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/MapState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/MapState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/MicropolisMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/DiverCityMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/MicropolisTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/DiverCityTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/MonsterSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/MonsterSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/QuietExplosionSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/QuietExplosionSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/RoadLikeTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/RoadLikeTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/RoadSpecifiedTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/RoadSpecifiedTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/ShipSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/ShipSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/SpecifiedTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/SpecifiedTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/Speed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/Speed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/SpriteKind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/SpriteKind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/TerrainBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/TerrainBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/TileBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/TileBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/TileConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/TileConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/TileSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/TileSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/Tiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/Tiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/ToolEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/ToolEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/ToolEffectIfc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/ToolEffectIfc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/ToolPreview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/ToolPreview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/ToolResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/ToolResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/ToolStroke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/ToolStroke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/TornadoSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/TornadoSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/TrafficSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/TrafficSim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/TrainSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/TrainSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/TranslatedToolEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/TranslatedToolEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/VerySpecifiedTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/VerySpecifiedTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/ZoneStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/ZoneStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/BuildingTechnology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/BuildingTechnology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/FireUpdateTech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/FireUpdateTech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/GeneralTechnology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/GeneralTechnology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/ImproveWindSolarTech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/ImproveWindSolarTech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/PoliceUpgradeTech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/PoliceUpgradeTech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/ProbabilityMeltdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/ProbabilityMeltdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/RailUpgradeTech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/RailUpgradeTech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/ReducePollutionTech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/ReducePollutionTech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/StreetUpgradeTech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/StreetUpgradeTech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/engine/techno/Technology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/engine/techno/Technology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/gui/BudgetDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/gui/BudgetDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/gui/ColorParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/gui/ColorParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/gui/DemandIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/gui/DemandIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/gui/EvaluationPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/gui/EvaluationPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/gui/GraphsPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/gui/GraphsPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/divercity/gui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divercity/gui/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +326,28 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2DFtbVSiFG56ehvYfvGGffUzhRv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Project.color": "023c28",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "app.teamhub.trackedBranches": "-13prdh2/master",
-    "last_opened_file_path": "C:/Users/jakob/OneDrive/Dokumente/GitHub/divercity",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Project.color&quot;: &quot;023c28&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;app.teamhub.trackedBranches&quot;: &quot;-13prdh2/master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jakob/OneDrive/Dokumente/GitHub/divercity&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JAR Application.divercity.jar">
     <configuration name="DiverCity_Beta.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/DiverCity_Beta.jar" />
@@ -100,5 +385,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

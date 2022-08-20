@@ -7,9 +7,9 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 /**
  * Implements the commuter train.
@@ -38,7 +38,7 @@ public class TrainSprite extends Sprite
 	static final int DIR_WEST = 3;
 	static final int DIR_NONE = 4; //not moving
 
-	public TrainSprite(Micropolis engine, int xpos, int ypos)
+	public TrainSprite(DiverCity engine, int xpos, int ypos)
 	{
 		super(engine, SpriteKind.TRA);
 		this.x = xpos * 16 + TRA_GROOVE_X;

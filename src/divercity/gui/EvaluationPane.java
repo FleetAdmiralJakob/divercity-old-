@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.gui;
+package divercity.gui;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -15,13 +15,13 @@ import java.text.*;
 import java.util.*;
 import javax.swing.*;
 
-import micropolisj.engine.*;
-import static micropolisj.gui.MainWindow.formatFunds;
+import divercity.engine.*;
+import static divercity.gui.MainWindow.formatFunds;
 
 public class EvaluationPane extends JPanel
-	implements Micropolis.Listener
+	implements DiverCity.Listener
 {
-	Micropolis engine;
+	DiverCity engine;
 
 	JLabel yesLbl;
 	JLabel noLbl;
@@ -35,10 +35,10 @@ public class EvaluationPane extends JPanel
 	JLabel scoreLbl;
 	JLabel scoreDeltaLbl;
 
-	static ResourceBundle cstrings = ResourceBundle.getBundle("micropolisj.CityStrings");
+	static ResourceBundle cstrings = ResourceBundle.getBundle("divercity.CityStrings");
 	static ResourceBundle gstrings = MainWindow.strings;
 
-	public EvaluationPane(Micropolis _engine)
+	public EvaluationPane(DiverCity _engine)
 	{
 		super(new BorderLayout());
 
@@ -60,7 +60,7 @@ public class EvaluationPane extends JPanel
 		setEngine(_engine);
 	}
 
-	public void setEngine(Micropolis newEngine)
+	public void setEngine(DiverCity newEngine)
 	{
 		if (engine != null) { //old engine
 			engine.removeListener(this);
@@ -242,15 +242,15 @@ public class EvaluationPane extends JPanel
 		return me;
 	}
 
-	//implements Micropolis.Listener
-	public void cityMessage(MicropolisMessage message, CityLocation loc) {}
+	//implements DiverCity.Listener
+	public void cityMessage(DiverCityMessage message, CityLocation loc) {}
 	public void citySound(Sound sound, CityLocation loc) {}
 	public void censusChanged() {}
 	public void demandChanged() {}
 	public void fundsChanged() {}
 	public void optionsChanged() {}
 
-	//implements Micropolis.Listener
+	//implements DiverCity.Listener
 	public void evaluationChanged()
 	{
 		loadEvaluation();

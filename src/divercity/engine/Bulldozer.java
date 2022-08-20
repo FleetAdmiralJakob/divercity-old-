@@ -7,15 +7,15 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 class Bulldozer extends ToolStroke
 {
-	Bulldozer(Micropolis city, int xpos, int ypos)
+	Bulldozer(Divercity city, int xpos, int ypos)
 	{
-		super(city, MicropolisTool.BULLDOZER, xpos, ypos);
+		super(city, DiverCityTool.BULLDOZER, xpos, ypos);
 	}
 
 	@Override

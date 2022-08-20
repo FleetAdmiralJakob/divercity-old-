@@ -7,18 +7,18 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 import java.util.*;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 /**
  * Contains the code for generating a random map terrain.
  */
 public class MapGenerator
 {
-	Micropolis engine;
+	DiverCity engine;
 	char [][] map;
 	Random PRNG;
 
@@ -33,7 +33,7 @@ public class MapGenerator
 	}
 	CreateIsland createIsland = CreateIsland.SELDOM;
 
-	public MapGenerator(Micropolis engine)
+	public MapGenerator(DiverCity engine)
 	{
 		assert engine != null;
 		this.engine = engine;
@@ -55,7 +55,7 @@ public class MapGenerator
 	 */
 	public void generateNewCity()
 	{
-		long r = Micropolis.DEFAULT_PRNG.nextLong();
+		long r = DiverCity.DEFAULT_PRNG.nextLong();
 		generateSomeCity(r);
 	}
 

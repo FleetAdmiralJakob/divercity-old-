@@ -7,7 +7,7 @@
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
 public interface ToolEffectIfc
 {
@@ -29,9 +29,9 @@ public interface ToolEffectIfc
 	 */
 	void spend(int amount);
 
-    MicropolisTool getTool();
+    DiverCityTool getTool();
 
-    void setTool(MicropolisTool tool);
+    void setTool(DiverCityTool tool);
 
 	void toolResult(ToolResult tr);
 }

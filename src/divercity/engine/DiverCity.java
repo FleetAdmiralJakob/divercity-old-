@@ -1,36 +1,36 @@
 // This file is part of DiverCity
-// DiverCity is based on MicropolisJ
+// DiverCity is based on DiverCityJ
 // Copyright (C) 2014 Arne Roland, Benjamin Kretz, Estela Gretenkord i Berenguer, Fabian Mett, Marvin Becker, Tom Brewe, Tony Schwedek, Ullika Scholz, Vanessa Schreck
-// Copyright (C) 2013 Jason Long for MicropolisJ
+// Copyright (C) 2013 Jason Long for DiverCityJ
 // Portions Copyright (C) 1989-2007 Electronic Arts Inc.
 //
-// MicropolisJ is free software; you can redistribute it and/or modify
+// DiverCityJ is free software; you can redistribute it and/or modify
 // it under the terms of the GNU GPLv3, with additional terms.
 // See the README file, included in this distribution, for details.
 
-package micropolisj.engine;
+package divercity.engine;
 
-import micropolisj.engine.techno.*;
+import divercity.engine.techno.*;
 
 import java.io.*;
 import java.util.*;
 
-import micropolisj.engine.techno.BuildingTechnology;
+import divercity.engine.techno.BuildingTechnology;
 
-import micropolisj.engine.techno.GeneralTechnology;
+import divercity.engine.techno.GeneralTechnology;
 
-import micropolisj.engine.techno.StreetUpgradeTech;
+import divercity.engine.techno.StreetUpgradeTech;
 
-import micropolisj.engine.techno.Technology;
+import divercity.engine.techno.Technology;
 
-import static micropolisj.engine.TileConstants.*;
+import static divercity.engine.TileConstants.*;
 
 /**
- * The main simulation engine for Micropolis.
+ * The main simulation engine for DiverCity.
  * The front-end should call animate() periodically
  * to move the simulation forward in time.
  */
-public class Micropolis
+public class DiverCity
 {
 	static final Random DEFAULT_PRNG = new Random();
 
@@ -343,11 +343,11 @@ public class Micropolis
         nCheats = 0;
     }
 
-    public Micropolis() {
+    public DiverCity() {
 		this(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 	}
 
-	public Micropolis(int width, int height)
+	public DiverCity(int width, int height)
 	{
 		PRNG = DEFAULT_PRNG;
 		evaluation = new CityEval(this);
@@ -391,46 +391,46 @@ public class Micropolis
         eetechs = new ArrayList<GeneralTechnology>();
         infraTechs = new ArrayList<GeneralTechnology>();
 
-        windTech = new BuildingTechnology(this,2000.0, "wind description", "Wind Power Plant Tech", MicropolisTool.WIND,MicropolisMessage.WIND_RESEARCH);
+        windTech = new BuildingTechnology(this,2000.0, "wind description", "Wind Power Plant Tech", DiverCityTool.WIND,DiverCityMessage.WIND_RESEARCH);
         buildingTechs.add(windTech);
         eetechs.add(windTech);
 
 
-        solarTech = new BuildingTechnology(this,2000.0, "solar description", "Solar Power Plant Tech", MicropolisTool.SOLAR,MicropolisMessage.SOLAR_RESEARCH);
+        solarTech = new BuildingTechnology(this,2000.0, "solar description", "Solar Power Plant Tech", DiverCityTool.SOLAR,DiverCityMessage.SOLAR_RESEARCH);
         buildingTechs.add(solarTech);
         eetechs.add(solarTech);
 
 
-        airportTech = new BuildingTechnology(this,2000.0, "airport tech description", "Airport Tech", MicropolisTool.AIRPORT,MicropolisMessage.AIRPORT_RESEARCH);
+        airportTech = new BuildingTechnology(this,2000.0, "airport tech description", "Airport Tech", DiverCityTool.AIRPORT,DiverCityMessage.AIRPORT_RESEARCH);
         buildingTechs.add(airportTech);
         infraTechs.add(airportTech);
         
-        twoLaneRoadTech = new BuildingTechnology(this, 200, "two lane description", "two lane Tech", MicropolisTool.BIGROADS,MicropolisMessage.TWOLANEROAD_RESEARCH);
+        twoLaneRoadTech = new BuildingTechnology(this, 200, "two lane description", "two lane Tech", DiverCityTool.BIGROADS,DiverCityMessage.TWOLANEROAD_RESEARCH);
         buildingTechs.add(twoLaneRoadTech);
         infraTechs.add(twoLaneRoadTech);
         
         
-        meltdownTech = new ProbabilityMeltdown(this, 1500, "meltdown description", "meltdown Tech", MicropolisMessage.NUCLEAR_UPGRADE);
+        meltdownTech = new ProbabilityMeltdown(this, 1500, "meltdown description", "meltdown Tech", DiverCityMessage.NUCLEAR_UPGRADE);
         eetechs.add(meltdownTech);
     
 
 
-        streetUpgradeTech = new StreetUpgradeTech(this,800, "street upgrade description", "street upgrade Tech",MicropolisMessage.ROAD_UPGRADE);
+        streetUpgradeTech = new StreetUpgradeTech(this,800, "street upgrade description", "street upgrade Tech",DiverCityMessage.ROAD_UPGRADE);
         infraTechs.add(streetUpgradeTech);
 
-        railUpgradeTech = new RailUpgradeTech(this,400, "rail upgrade description", "rail upgrade tech",MicropolisMessage.RAIL_UPGRADE);
+        railUpgradeTech = new RailUpgradeTech(this,400, "rail upgrade description", "rail upgrade tech",DiverCityMessage.RAIL_UPGRADE);
         infraTechs.add(railUpgradeTech);
         
-        fireUpdateTech = new FireUpdateTech(this,400, "fire upgrade description", "fire upgrade tech",MicropolisMessage.FIRE_UPGRADE);
+        fireUpdateTech = new FireUpdateTech(this,400, "fire upgrade description", "fire upgrade tech",DiverCityMessage.FIRE_UPGRADE);
         infraTechs.add(fireUpdateTech);
         
-        policeUpgradeTech = new PoliceUpgradeTech(this,400, "police upgrade description", "police upgrade tech",MicropolisMessage.POLICE_UPGRADE);
+        policeUpgradeTech = new PoliceUpgradeTech(this,400, "police upgrade description", "police upgrade tech",DiverCityMessage.POLICE_UPGRADE);
         infraTechs.add(policeUpgradeTech);
         
-        reducePollutionTech = new ReducePollutionTech(this,800, "reduce pollution description", "reduce pollution tech",MicropolisMessage.POLLUTION_UPGRADE);
+        reducePollutionTech = new ReducePollutionTech(this,800, "reduce pollution description", "reduce pollution tech",DiverCityMessage.POLLUTION_UPGRADE);
         eetechs.add(reducePollutionTech);
         
-        improveWindSolarTech = new ImproveWindSolarTech(this,800, "improve wind and solar power plants description", "wind solar upgrade tech",MicropolisMessage.SOLARWIND_UPGRADE);
+        improveWindSolarTech = new ImproveWindSolarTech(this,800, "improve wind and solar power plants description", "wind solar upgrade tech",DiverCityMessage.SOLARWIND_UPGRADE);
         eetechs.add(improveWindSolarTech);
         
         selectedInfraTech = null;
@@ -447,7 +447,7 @@ public class Micropolis
 		}
 	}
 
-	void fireCityMessage(MicropolisMessage message, CityLocation loc)
+	void fireCityMessage(DiverCityMessage message, CityLocation loc)
 	{
 		for (Listener l : listeners) {
 			l.cityMessage(message, loc);
@@ -578,13 +578,13 @@ public class Micropolis
 
     /**
      * The listener interface for receiving miscellaneous events that occur
-	 * in the Micropolis city.
-	 * Use the Micropolis class's addListener interface to register an object
+	 * in the DiverCity city.
+	 * Use the DiverCity class's addListener interface to register an object
 	 * that implements this interface.
 	 */
 	public interface Listener
 	{
-		void cityMessage(MicropolisMessage message, CityLocation loc);
+		void cityMessage(DiverCityMessage message, CityLocation loc);
 		void citySound(Sound sound, CityLocation loc);
 
 		/**
@@ -1390,7 +1390,7 @@ public class Micropolis
 
                     if (++numPower > localPower) {
                         // trigger notification
-                        sendMessage(MicropolisMessage.BROWNOUTS_REPORT);
+                        sendMessage(DiverCityMessage.BROWNOUTS_REPORT);
                         return;
                     }
                     powerMap[current.y][current.x] = true;
@@ -2393,7 +2393,7 @@ public class Micropolis
 		}
 
 		clearMes();
-		sendMessageAt(MicropolisMessage.MELTDOWN_REPORT, xpos, ypos);
+		sendMessageAt(DiverCityMessage.MELTDOWN_REPORT, xpos, ypos);
 	}
 
 	static final int [] MltdwnTab = { 30000, 20000, 10000 };
@@ -2766,7 +2766,7 @@ public class Micropolis
 		makeSound(centerMassX, centerMassY, Sound.EXPLOSION_LOW);
 		fireEarthquakeStarted();
 
-		sendMessageAt(MicropolisMessage.EARTHQUAKE_REPORT, centerMassX, centerMassY);
+		sendMessageAt(DiverCityMessage.EARTHQUAKE_REPORT, centerMassX, centerMassY);
 		int time = PRNG.nextInt(701) + 300;
 		for (int z = 0; z < time; z++) {
 			int x = PRNG.nextInt(getWidth());
@@ -2792,7 +2792,7 @@ public class Micropolis
 		if (isArsonable(t)) {
 			setTile(x, y, (char)(FIRE + PRNG.nextInt(8)));
 			crashLocation = new CityLocation(x, y);
-			sendMessageAt(MicropolisMessage.FIRE_REPORT, x, y);
+			sendMessageAt(DiverCityMessage.FIRE_REPORT, x, y);
 		}
 	}
 
@@ -2808,7 +2808,7 @@ public class Micropolis
 			{
 				if (tile > 21 && (tile <= LASTZONE || (tile > NEWZONE && tile <= NEWLASTZONE))) {
 					setTile(x, y, (char)(FIRE + PRNG.nextInt(8)));
-					sendMessageAt(MicropolisMessage.FIRE_REPORT, x, y);
+					sendMessageAt(DiverCityMessage.FIRE_REPORT, x, y);
 					return;
 				}
 			}
@@ -2890,7 +2890,7 @@ public class Micropolis
 		int xpos = PRNG.nextInt(getWidth() - 19) + 10;
 		int ypos = PRNG.nextInt(getHeight() - 19) + 10;
 		sprites.add(new TornadoSprite(this, xpos, ypos));
-		sendMessageAt(MicropolisMessage.TORNADO_REPORT, xpos, ypos);
+		sendMessageAt(DiverCityMessage.TORNADO_REPORT, xpos, ypos);
 	}
 
 	public void makeFlood()
@@ -2912,7 +2912,7 @@ public class Micropolis
 						if (isFloodable(c)) {
 							setTile(xx, yy, FLOOD);
 							floodCnt = 30;
-							sendMessageAt(MicropolisMessage.FLOOD_REPORT, xx, yy);
+							sendMessageAt(DiverCityMessage.FLOOD_REPORT, xx, yy);
 							floodX = xx;
 							floodY = yy;
 							return;
@@ -3023,17 +3023,17 @@ public class Micropolis
 		if (cityTime % 4 == 0) {
 			int newPop = (resPop + comPop * 8 + indPop * 8) * 20;
 			if (lastCityPop != 0) {
-				MicropolisMessage z = null;
+				DiverCityMessage z = null;
 				if (lastCityPop < 500000 && newPop >= 500000) {
-					z = MicropolisMessage.POP_500K_REACHED;
+					z = DiverCityMessage.POP_500K_REACHED;
 				} else if (lastCityPop < 100000 && newPop >= 100000) {
-					z = MicropolisMessage.POP_100K_REACHED;
+					z = DiverCityMessage.POP_100K_REACHED;
 				} else if (lastCityPop < 50000 && newPop >= 50000) {
-					z = MicropolisMessage.POP_50K_REACHED;
+					z = DiverCityMessage.POP_50K_REACHED;
 				} else if (lastCityPop < 10000 && newPop >= 10000) {
-					z = MicropolisMessage.POP_10K_REACHED;
+					z = DiverCityMessage.POP_10K_REACHED;
 				} else if (lastCityPop < 2000 && newPop >= 2000) {
-					z = MicropolisMessage.POP_2K_REACHED;
+					z = DiverCityMessage.POP_2K_REACHED;
 				}
 				if (z != null) {
 					sendMessage(z);
@@ -3056,117 +3056,117 @@ public class Micropolis
 		switch (z) {
 		case 1:
 			if (totalZoneCount / 4 >= resZoneCount) {
-				sendMessage(MicropolisMessage.NEED_RES);
+				sendMessage(DiverCityMessage.NEED_RES);
 			}
 			break;
 		case 5:
 			if (totalZoneCount / 8 >= comZoneCount) {
-				sendMessage(MicropolisMessage.NEED_COM);
+				sendMessage(DiverCityMessage.NEED_COM);
 			}
 			break;
 		case 10:
 			if (totalZoneCount / 8 >= indZoneCount) {
-				sendMessage(MicropolisMessage.NEED_IND);
+				sendMessage(DiverCityMessage.NEED_IND);
 			}
 			break;
 		case 14:
 			if (200*noWay>getCityPopulation()) {
-				sendMessage(MicropolisMessage.NEED_ROADS);
+				sendMessage(DiverCityMessage.NEED_ROADS);
 			}
 			break;
 		case 18:
 			if (100*longWay>getCityPopulation()) { //TODO need to change
-				sendMessage(MicropolisMessage.NEED_RAILS);
+				sendMessage(DiverCityMessage.NEED_RAILS);
 			}
 			break;
 		case 22:
 			if (totalZoneCount > 10 && powerCount == 0) {
-				sendMessage(MicropolisMessage.NEED_POWER);
+				sendMessage(DiverCityMessage.NEED_POWER);
 			}
 			break;
 		case 26:
 			resCap = (resPop > 500 && stadiumCount == 0);
 			if (resCap) {
-				sendMessage(MicropolisMessage.NEED_STADIUM);
+				sendMessage(DiverCityMessage.NEED_STADIUM);
 			}
 			break;
 		case 28:
 			indCap = (indPop > 70 && seaportCount == 0);
 			if (indCap) {
-				sendMessage(MicropolisMessage.NEED_SEAPORT);
+				sendMessage(DiverCityMessage.NEED_SEAPORT);
 			}
 			break;
 		case 30:
 			comCap = (comPop > 100 && airportCount == 0);
 			if (comCap) {
-				sendMessage(MicropolisMessage.NEED_AIRPORT);
+				sendMessage(DiverCityMessage.NEED_AIRPORT);
 			}
 			break;
 		case 32:
 			int TM = unpoweredZoneCount + poweredZoneCount;
 			if (TM != 0) {
 				if ((double)poweredZoneCount / (double)TM < 0.7) {
-					sendMessage(MicropolisMessage.BLACKOUTS);
+					sendMessage(DiverCityMessage.BLACKOUTS);
 				}
 			}
 			break;
 		case 35:
 			if (pollutionAverage > 95) {
-				sendMessage(MicropolisMessage.HIGH_POLLUTION);
+				sendMessage(DiverCityMessage.HIGH_POLLUTION);
 			}
 			break;
 		case 42:
 			if (crimeAverage > 100) {
-				sendMessage(MicropolisMessage.HIGH_CRIME);
+				sendMessage(DiverCityMessage.HIGH_CRIME);
 			}
 			break;
 		case 45:
 			if (totalPop > 60 && fireStationCount == 0) {
-				sendMessage(MicropolisMessage.NEED_FIRESTATION);
+				sendMessage(DiverCityMessage.NEED_FIRESTATION);
 			}
 			break;
 		case 48:
 			if (totalPop > 60 && policeCount == 0) {
-				sendMessage(MicropolisMessage.NEED_POLICE);
+				sendMessage(DiverCityMessage.NEED_POLICE);
 			}
 			break;
 		case 51:
 			if (cityTax > 12) {
-				sendMessage(MicropolisMessage.HIGH_TAXES);
+				sendMessage(DiverCityMessage.HIGH_TAXES);
 			}
 			break;
         case 52:
             if (totalPop > 60 && schoolCount == 0 && educationAverage < 100) {
-                sendMessage(MicropolisMessage.NEED_SCHOOL);
+                sendMessage(DiverCityMessage.NEED_SCHOOL);
             }
             break;
 		case 54:
 			if (roadEffect < 20 && roadTotal > 30) {
-				sendMessage(MicropolisMessage.ROADS_NEED_FUNDING);
+				sendMessage(DiverCityMessage.ROADS_NEED_FUNDING);
 			}
 			break;
 		case 57:
 			if (fireEffect < 700 && totalPop > 20) {
-				sendMessage(MicropolisMessage.FIRE_NEED_FUNDING);
+				sendMessage(DiverCityMessage.FIRE_NEED_FUNDING);
 			}
 			break;
 		case 60:
 			if (policeEffect < 700 && totalPop > 20) {
-				sendMessage(MicropolisMessage.POLICE_NEED_FUNDING);
+				sendMessage(DiverCityMessage.POLICE_NEED_FUNDING);
 			}
 			break;
 		case 63:
 			if (trafficAverage > 60) {
-				sendMessage(MicropolisMessage.HIGH_TRAFFIC);
+				sendMessage(DiverCityMessage.HIGH_TRAFFIC);
 			}
 		case 67:
 			if (educationEffect < 700 && totalPop > 20) {
-				sendMessage(MicropolisMessage.SCHOOL_NEED_FUNDING);
+				sendMessage(DiverCityMessage.SCHOOL_NEED_FUNDING);
 			}
 			break;
 		case 70:
 			if (cultureEffect < 700 && totalPop > 1000) {
-				sendMessage(MicropolisMessage.CULTURE_NEED_FUNDING);
+				sendMessage(DiverCityMessage.CULTURE_NEED_FUNDING);
 			}
 			break;
 		default:
@@ -3182,12 +3182,12 @@ public class Micropolis
 		// if it is a repeat.
 	}
 
-	public void sendMessage(MicropolisMessage message)
+	public void sendMessage(DiverCityMessage message)
 	{
 		fireCityMessage(message, null);
 	}
 
-	public void sendMessageAt(MicropolisMessage message, int x, int y)
+	public void sendMessageAt(DiverCityMessage message, int x, int y)
 	{
 		fireCityMessage(message, new CityLocation(x,y));
 	}
